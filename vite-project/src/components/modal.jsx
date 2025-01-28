@@ -5,7 +5,7 @@ function Modal({ image, index, bgColor, onClose, handleBgColorChange }) {
   const [modalBgColor, setModalBgColor] = useState(bgColor);
 
   useEffect(() => {
-    setModalBgColor(bgColor); // Sync modal color with the passed color
+    setModalBgColor(bgColor); 
   }, [bgColor]);
 
   const handleOverlayClick = (e) => {
@@ -16,8 +16,8 @@ function Modal({ image, index, bgColor, onClose, handleBgColorChange }) {
 
   const handleColorChange = (e) => {
     const newColor = e.target.value;
-    setModalBgColor(newColor); // Update modal background color
-    handleBgColorChange(index, newColor); // Update color of the specific image in the grid
+    setModalBgColor(newColor); 
+    handleBgColorChange(index, newColor); 
   };
 
   return (
@@ -36,7 +36,7 @@ function Modal({ image, index, bgColor, onClose, handleBgColorChange }) {
           <p>No image provided</p>
         )}
 
-        {/* Color Picker */}
+        
         <div className="color-picker">
           <label htmlFor="color-picker"> BACKGROUND <input
             id="color-picker"

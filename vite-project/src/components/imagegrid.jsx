@@ -15,13 +15,13 @@ function ImageGrid({ images }) {
     const updatedColors = [...cardColors];
     updatedColors[index] = newColor;
     setCardColors(updatedColors);
-    setModalBgColor(newColor); // Sync color change to modal
+    setModalBgColor(newColor);
   };
 
   const handleImageClick = (url, index) => {
     setSelectedImage(url);
     setSelectedIndex(index);
-    setModalBgColor(cardColors[index]); // Set modal color to the card color when clicked
+    setModalBgColor(cardColors[index]); 
   };
 
   const closeModal = () => {
