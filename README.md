@@ -13,3 +13,6 @@ API Data Fetching: Handling API errors gracefully was crucial, especially since 
 Faced issues with synchronizing modal color picker and grid updates. Resolved this by passing state-updating functions as props.
 
 
+deployed app link:- wingardium-git-main-abheekspandans-projects.vercel.app
+
+
